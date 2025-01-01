@@ -7,6 +7,7 @@
 
 import Foundation
 import Melatonin
+import StorageKit
 
 actor AuthManager: AuthProvider {
     private let authService: AuthService

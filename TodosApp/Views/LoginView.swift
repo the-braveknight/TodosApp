@@ -11,8 +11,7 @@ struct LoginView: View {
     @State private var email: String = "zaid.riadh@gmail.com"
     @State private var password: String = "zaid@root99"
     
-    @Environment(\.login) var login
-//    @Environment(\.dismiss) var dismiss
+    @Environment(\.login) private var login
     
     var body: some View {
         Form {
@@ -20,6 +19,7 @@ struct LoginView: View {
             SecureField("Password", text: $password)
             
             Button("Login", action: loginWithCurrentCredentials)
+                .font(.headline)
         }
     }
     
@@ -27,7 +27,6 @@ struct LoginView: View {
         Task {
             do {
                 try await login(email: email, password: password)
-//                dismiss()
             } catch {
                 print(error)
             }

@@ -25,4 +25,27 @@ actor HTTPTodoService: TodoService, AuthorizedHTTPService {
         let todos = try decoder.decode([Todo].self, from: data)
         return PaginatedResponse(items: todos, pagination: paginationMetadata)
     }
+    
+    func delete(id: Todo.ID) async throws {
+        let endpoint = DeleteTodo(id: id)
+        let (_, response) = try await loadWithAuth(endpoint.call)
+        guard response.statusCode == 204 else {
+            throw URLError(.badServerResponse)
+        }
+    }
+    
+    func patch(id: Todo.ID, payload: Todo.Patch) async throws {
+        let endpoint = PatchTodo(id: id, payload: payload)
+        let (_, response) = try await loadWithAuth(endpoint.call)
+        guard response.statusCode == 204 else {
+            throw URLError(.badServerResponse)
+        }
+    }
+    
+    func create(payload: Todo.Create) async throws -> Todo {
+        let endpoint = CreateTodo(payload: payload)
+        let (data, _) = try await loadWithAuth(endpoint.call)
+        let decoder = JSONDecoder()
+        return try decoder.decode(Todo.self, from: data)
+    }
 }

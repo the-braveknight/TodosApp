@@ -22,9 +22,10 @@ struct ProfileView: View {
                 
                 Section {
                     Button("Logout", action: logoutCurrentUser)
+                        .font(.headline)
                 }
             }
-            .navigationTitle("Hello, \(user.firstName)!")
+            .navigationTitle("Profile")
         }
     }
     

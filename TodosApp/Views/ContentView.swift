@@ -8,22 +8,18 @@
 import SwiftUI
 
 struct ContentView: View {
-    @Environment(\.user) private var user: User?
+    @Environment(User.self) private var user: User
     @Environment(\.logout) private var logout
     
     var body: some View {
-        if let user {
-            TabView {
-                Tab("Todos", systemImage: "checklist") {
-                    TodosView()
-                }
-                
-                Tab(user.firstName, systemImage: "person.circle") {
-                    UserView(user: user)
-                }
+        TabView {
+            Tab("Todos", systemImage: "checklist") {
+                TodosView()
             }
-        } else {
-            Text("Not logged in.")
+            
+            Tab(user.firstName, systemImage: "person.circle") {
+                ProfileView()
+            }
         }
     }
     

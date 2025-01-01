@@ -10,6 +10,8 @@ import SwiftData
 
 struct TodosView: View {
     @Query private var todos: [Todo]
+    
+    @State private var isCreatingTodo: Bool = false
     @State private var pagination: PaginationMetadata?
     
     @Environment(\.todoService) private var service
@@ -18,17 +20,27 @@ struct TodosView: View {
     
     var body: some View {
         NavigationStack {
-            List(todos) { todo in
-                TodoRow(todo: todo)
-                    .task {
-                        if todo.id == todos.last?.id {
-                            await fetchNextPage()
-                        }
-                    }
+            List {
+                ForEach(todos) { todo in
+                    TodoRow(todo: todo)
+                }
+                .onDelete(perform: deleteTodos)
             }
             .navigationTitle("Todos")
             .task(fetchInitialTodos)
             .refreshable(action: fetchInitialTodos)
+            .toolbar {
+                ToolbarItem(placement: .topBarLeading) {
+                    Button {
+                        isCreatingTodo = true
+                    } label: {
+                        Image(systemName: "plus")
+                    }
+                }
+            }
+        }
+        .sheet(isPresented: $isCreatingTodo) {
+            CreateTodoView()
         }
     }
     
@@ -38,7 +50,6 @@ struct TodosView: View {
     
     @Sendable private func fetchNextPage() async {
         guard let nextPage = pagination?.nextPage else { return }
-        
         await fetchTodos(page: nextPage, todosPerPage: 10)
     }
     
@@ -58,6 +69,24 @@ struct TodosView: View {
             }
         } catch {
             print("Error fetching todos: \(error.localizedDescription).")
+        }
+    }
+    
+    private func deleteTodos(at offsets: IndexSet) {
+        offsets.forEach { index in
+            delete(todo: todos[index])
+        }
+    }
+    
+    private func delete(todo: Todo) {
+        Task {
+            do {
+                try await service.delete(id: todo.id)
+                modelContext.delete(todo)
+                try modelContext.save()
+            } catch {
+                print("Error deleting todo: \(error.localizedDescription).")
+            }
         }
     }
 }

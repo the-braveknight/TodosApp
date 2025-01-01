@@ -13,17 +13,21 @@ struct TodoEntity: AppEntity {
     
     let id: Todo.ID
     let title: String
+    let isComplete: Bool
     
     var displayRepresentation: DisplayRepresentation {
-        DisplayRepresentation(stringLiteral: title)
+        let title = LocalizedStringResource(stringLiteral: title)
+        let image = DisplayRepresentation.Image(systemName: isComplete ? "checkmark.circle" : "circle")
+        return DisplayRepresentation(title: title, image: image)
     }
     
-    init(title: String, id: Todo.ID) {
+    init(title: String, id: Todo.ID, isComplete: Bool) {
         self.title = title
         self.id = id
+        self.isComplete = isComplete
     }
     
     init(todo: Todo) {
-        self.init(title: todo.title, id: todo.id)
+        self.init(title: todo.title, id: todo.id, isComplete: todo.isComplete)
     }
 }
