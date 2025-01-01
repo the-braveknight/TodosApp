@@ -6,23 +6,104 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		961FEE672D217F39009AC4F9 /* Melatonin in Frameworks */ = {isa = PBXBuildFile; productRef = 961FEE662D217F39009AC4F9 /* Melatonin */; };
+		961FEE932D2183A8009AC4F9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 961FEE8B2D2183A8009AC4F9 /* Preview Assets.xcassets */; };
+		961FEE942D2183A8009AC4F9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 961FEE8F2D2183A8009AC4F9 /* Assets.xcassets */; };
+		961FEE952D2183A8009AC4F9 /* Auth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 961FEE802D2183A8009AC4F9 /* Auth.swift */; };
+		961FEE962D2183A8009AC4F9 /* Todo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 961FEE812D2183A8009AC4F9 /* Todo.swift */; };
+		961FEE972D2183A8009AC4F9 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 961FEE822D2183A8009AC4F9 /* User.swift */; };
+		961FEE982D2183A8009AC4F9 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 961FEE842D2183A8009AC4F9 /* AuthService.swift */; };
+		961FEE992D2183A8009AC4F9 /* GetTodos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 961FEE852D2183A8009AC4F9 /* GetTodos.swift */; };
+		961FEE9A2D2183A8009AC4F9 /* HTTPAuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 961FEE862D2183A8009AC4F9 /* HTTPAuthService.swift */; };
+		961FEE9B2D2183A8009AC4F9 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 961FEE872D2183A8009AC4F9 /* Login.swift */; };
+		961FEE9C2D2183A8009AC4F9 /* LoginResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 961FEE882D2183A8009AC4F9 /* LoginResponse.swift */; };
+		961FEE9D2D2183A8009AC4F9 /* VaporCall.swift in Sources */ = {isa = PBXBuildFile; fileRef = 961FEE892D2183A8009AC4F9 /* VaporCall.swift */; };
+		961FEE9E2D2183A8009AC4F9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 961FEE8D2D2183A8009AC4F9 /* ContentView.swift */; };
+		961FEE9F2D2183A8009AC4F9 /* TodosApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 961FEE912D2183A8009AC4F9 /* TodosApp.swift */; };
+		961FEEA12D218419009AC4F9 /* TodoService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 961FEEA02D218417009AC4F9 /* TodoService.swift */; };
+		961FEEA32D218460009AC4F9 /* PaginatedResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 961FEEA22D21845B009AC4F9 /* PaginatedResponse.swift */; };
+		961FEEA72D218A1A009AC4F9 /* HTTPTodoService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 961FEEA62D218A16009AC4F9 /* HTTPTodoService.swift */; };
+		961FEEA92D218A83009AC4F9 /* Keychain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 961FEEA82D218A83009AC4F9 /* Keychain.swift */; };
+		961FEEB42D218F3F009AC4F9 /* Refresh.swift in Sources */ = {isa = PBXBuildFile; fileRef = 961FEEB32D218F3D009AC4F9 /* Refresh.swift */; };
+		961FEEB62D218FB3009AC4F9 /* CreateUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 961FEEB52D218FAB009AC4F9 /* CreateUser.swift */; };
+		961FEEB82D219050009AC4F9 /* GetUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 961FEEB72D21904E009AC4F9 /* GetUser.swift */; };
+		961FEEBC2D2195F8009AC4F9 /* HTTPError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 961FEEBB2D2195F0009AC4F9 /* HTTPError.swift */; };
+		961FEEBE2D219B6A009AC4F9 /* AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 961FEEBD2D219B62009AC4F9 /* AuthManager.swift */; };
+		961FEEC02D21A3DF009AC4F9 /* AuthorizedHTTPService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 961FEEBF2D21A3DA009AC4F9 /* AuthorizedHTTPService.swift */; };
+		961FEEC52D21A76F009AC4F9 /* Environment+TodoService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 961FEEC42D21A75E009AC4F9 /* Environment+TodoService.swift */; };
+		961FEEC72D21AFC9009AC4F9 /* Environment+AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 961FEEC62D21AFC2009AC4F9 /* Environment+AuthManager.swift */; };
+		961FEEC92D21B0FF009AC4F9 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 961FEEC82D21B0E9009AC4F9 /* LoginView.swift */; };
+		961FEECC2D21B1E4009AC4F9 /* LoginAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 961FEECB2D21B1DE009AC4F9 /* LoginAction.swift */; };
+		961FEECE2D21BC57009AC4F9 /* Environment+User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 961FEECD2D21BC51009AC4F9 /* Environment+User.swift */; };
+		961FEED02D21BDAE009AC4F9 /* LogoutAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 961FEECF2D21BDAA009AC4F9 /* LogoutAction.swift */; };
+		961FEED22D21C4E5009AC4F9 /* TodosView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 961FEED12D21C4E2009AC4F9 /* TodosView.swift */; };
+		961FEED42D21C511009AC4F9 /* TodoRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 961FEED32D21C50F009AC4F9 /* TodoRow.swift */; };
+		961FEED62D21C7F8009AC4F9 /* UserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 961FEED52D21C7F6009AC4F9 /* UserView.swift */; };
+		9677E8232D2427070069F629 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9677E8222D2427040069F629 /* UserService.swift */; };
+		9677E8252D2427240069F629 /* HTTPUserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9677E8242D2427210069F629 /* HTTPUserService.swift */; };
+		9677E82B2D24340C0069F629 /* AuthProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9677E82A2D2434090069F629 /* AuthProvider.swift */; };
+		9677E82E2D243A980069F629 /* RequestAuthorizationAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9677E82D2D243A900069F629 /* RequestAuthorizationAction.swift */; };
+		9677E8312D2560400069F629 /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9677E8302D25603E0069F629 /* Storage.swift */; };
+		9677E8332D2560E20069F629 /* StoredKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9677E8322D2560E00069F629 /* StoredKey.swift */; };
+		9677E8352D2563990069F629 /* KeychainStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9677E8342D2563950069F629 /* KeychainStorage.swift */; };
+		9677E8372D2564680069F629 /* DefaultsStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9677E8362D2564620069F629 /* DefaultsStorage.swift */; };
+		9677E83A2D2566AC0069F629 /* InMemoryStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9677E8392D2566A90069F629 /* InMemoryStorage.swift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		961FEE4A2D217DA8009AC4F9 /* TodosApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TodosApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		961FEE802D2183A8009AC4F9 /* Auth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Auth.swift; sourceTree = "<group>"; };
+		961FEE812D2183A8009AC4F9 /* Todo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Todo.swift; sourceTree = "<group>"; };
+		961FEE822D2183A8009AC4F9 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		961FEE842D2183A8009AC4F9 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		961FEE852D2183A8009AC4F9 /* GetTodos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetTodos.swift; sourceTree = "<group>"; };
+		961FEE862D2183A8009AC4F9 /* HTTPAuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPAuthService.swift; sourceTree = "<group>"; };
+		961FEE872D2183A8009AC4F9 /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
+		961FEE882D2183A8009AC4F9 /* LoginResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginResponse.swift; sourceTree = "<group>"; };
+		961FEE892D2183A8009AC4F9 /* VaporCall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VaporCall.swift; sourceTree = "<group>"; };
+		961FEE8B2D2183A8009AC4F9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		961FEE8D2D2183A8009AC4F9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		961FEE8F2D2183A8009AC4F9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		961FEE902D2183A8009AC4F9 /* TodosApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TodosApp.entitlements; sourceTree = "<group>"; };
+		961FEE912D2183A8009AC4F9 /* TodosApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodosApp.swift; sourceTree = "<group>"; };
+		961FEEA02D218417009AC4F9 /* TodoService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoService.swift; sourceTree = "<group>"; };
+		961FEEA22D21845B009AC4F9 /* PaginatedResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaginatedResponse.swift; sourceTree = "<group>"; };
+		961FEEA62D218A16009AC4F9 /* HTTPTodoService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPTodoService.swift; sourceTree = "<group>"; };
+		961FEEA82D218A83009AC4F9 /* Keychain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Keychain.swift; sourceTree = "<group>"; };
+		961FEEB32D218F3D009AC4F9 /* Refresh.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Refresh.swift; sourceTree = "<group>"; };
+		961FEEB52D218FAB009AC4F9 /* CreateUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateUser.swift; sourceTree = "<group>"; };
+		961FEEB72D21904E009AC4F9 /* GetUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetUser.swift; sourceTree = "<group>"; };
+		961FEEBB2D2195F0009AC4F9 /* HTTPError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPError.swift; sourceTree = "<group>"; };
+		961FEEBD2D219B62009AC4F9 /* AuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthManager.swift; sourceTree = "<group>"; };
+		961FEEBF2D21A3DA009AC4F9 /* AuthorizedHTTPService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizedHTTPService.swift; sourceTree = "<group>"; };
+		961FEEC32D21A6DF009AC4F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		961FEEC42D21A75E009AC4F9 /* Environment+TodoService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Environment+TodoService.swift"; sourceTree = "<group>"; };
+		961FEEC62D21AFC2009AC4F9 /* Environment+AuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Environment+AuthManager.swift"; sourceTree = "<group>"; };
+		961FEEC82D21B0E9009AC4F9 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		961FEECB2D21B1DE009AC4F9 /* LoginAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginAction.swift; sourceTree = "<group>"; };
+		961FEECD2D21BC51009AC4F9 /* Environment+User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Environment+User.swift"; sourceTree = "<group>"; };
+		961FEECF2D21BDAA009AC4F9 /* LogoutAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoutAction.swift; sourceTree = "<group>"; };
+		961FEED12D21C4E2009AC4F9 /* TodosView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodosView.swift; sourceTree = "<group>"; };
+		961FEED32D21C50F009AC4F9 /* TodoRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoRow.swift; sourceTree = "<group>"; };
+		961FEED52D21C7F6009AC4F9 /* UserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserView.swift; sourceTree = "<group>"; };
+		9677E8222D2427040069F629 /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
+		9677E8242D2427210069F629 /* HTTPUserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPUserService.swift; sourceTree = "<group>"; };
+		9677E82A2D2434090069F629 /* AuthProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthProvider.swift; sourceTree = "<group>"; };
+		9677E82D2D243A900069F629 /* RequestAuthorizationAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestAuthorizationAction.swift; sourceTree = "<group>"; };
+		9677E8302D25603E0069F629 /* Storage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storage.swift; sourceTree = "<group>"; };
+		9677E8322D2560E00069F629 /* StoredKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoredKey.swift; sourceTree = "<group>"; };
+		9677E8342D2563950069F629 /* KeychainStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainStorage.swift; sourceTree = "<group>"; };
+		9677E8362D2564620069F629 /* DefaultsStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultsStorage.swift; sourceTree = "<group>"; };
+		9677E8392D2566A90069F629 /* InMemoryStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InMemoryStorage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
-
-/* Begin PBXFileSystemSynchronizedRootGroup section */
-		961FEE4C2D217DA8009AC4F9 /* TodosApp */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = TodosApp;
-			sourceTree = "<group>";
-		};
-/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		961FEE472D217DA8009AC4F9 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				961FEE672D217F39009AC4F9 /* Melatonin in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -32,7 +113,7 @@
 		961FEE412D217DA8009AC4F9 = {
 			isa = PBXGroup;
 			children = (
-				961FEE4C2D217DA8009AC4F9 /* TodosApp */,
+				961FEE922D2183A8009AC4F9 /* TodosApp */,
 				961FEE4B2D217DA8009AC4F9 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -43,6 +124,184 @@
 				961FEE4A2D217DA8009AC4F9 /* TodosApp.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		961FEE832D2183A8009AC4F9 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				961FEE802D2183A8009AC4F9 /* Auth.swift */,
+				961FEE812D2183A8009AC4F9 /* Todo.swift */,
+				961FEE822D2183A8009AC4F9 /* User.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		961FEE8A2D2183A8009AC4F9 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				9677E82C2D2435D10069F629 /* Auth */,
+				961FEEB12D218C0D009AC4F9 /* HTTP Calls */,
+				961FEEB02D218C03009AC4F9 /* Endpoints */,
+				961FEEAD2D218BDD009AC4F9 /* Services */,
+				961FEEAC2D218BBD009AC4F9 /* Responses */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		961FEE8C2D2183A8009AC4F9 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				961FEE8B2D2183A8009AC4F9 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		961FEE8E2D2183A8009AC4F9 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				961FEE8D2D2183A8009AC4F9 /* ContentView.swift */,
+				961FEED12D21C4E2009AC4F9 /* TodosView.swift */,
+				961FEED52D21C7F6009AC4F9 /* UserView.swift */,
+				961FEED32D21C50F009AC4F9 /* TodoRow.swift */,
+				961FEEC82D21B0E9009AC4F9 /* LoginView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		961FEE922D2183A8009AC4F9 /* TodosApp */ = {
+			isa = PBXGroup;
+			children = (
+				961FEEC32D21A6DF009AC4F9 /* Info.plist */,
+				961FEE902D2183A8009AC4F9 /* TodosApp.entitlements */,
+				961FEE912D2183A8009AC4F9 /* TodosApp.swift */,
+				961FEECA2D21B1D4009AC4F9 /* Environment */,
+				961FEE832D2183A8009AC4F9 /* Models */,
+				961FEE8A2D2183A8009AC4F9 /* Networking */,
+				961FEEB22D218CE6009AC4F9 /* Helpers */,
+				961FEE8E2D2183A8009AC4F9 /* Views */,
+				961FEE8C2D2183A8009AC4F9 /* Preview Content */,
+				961FEE8F2D2183A8009AC4F9 /* Assets.xcassets */,
+			);
+			path = TodosApp;
+			sourceTree = "<group>";
+		};
+		961FEEAC2D218BBD009AC4F9 /* Responses */ = {
+			isa = PBXGroup;
+			children = (
+				961FEE882D2183A8009AC4F9 /* LoginResponse.swift */,
+				961FEEA22D21845B009AC4F9 /* PaginatedResponse.swift */,
+			);
+			path = Responses;
+			sourceTree = "<group>";
+		};
+		961FEEAD2D218BDD009AC4F9 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				9677E8212D2426FF0069F629 /* User */,
+				961FEEAE2D218BE9009AC4F9 /* Auth */,
+				961FEEAF2D218BEF009AC4F9 /* Todo */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		961FEEAE2D218BE9009AC4F9 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				961FEE842D2183A8009AC4F9 /* AuthService.swift */,
+				961FEE862D2183A8009AC4F9 /* HTTPAuthService.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		961FEEAF2D218BEF009AC4F9 /* Todo */ = {
+			isa = PBXGroup;
+			children = (
+				961FEEA02D218417009AC4F9 /* TodoService.swift */,
+				961FEEA62D218A16009AC4F9 /* HTTPTodoService.swift */,
+			);
+			path = Todo;
+			sourceTree = "<group>";
+		};
+		961FEEB02D218C03009AC4F9 /* Endpoints */ = {
+			isa = PBXGroup;
+			children = (
+				961FEEB52D218FAB009AC4F9 /* CreateUser.swift */,
+				961FEE872D2183A8009AC4F9 /* Login.swift */,
+				961FEEB32D218F3D009AC4F9 /* Refresh.swift */,
+				961FEE852D2183A8009AC4F9 /* GetTodos.swift */,
+				961FEEB72D21904E009AC4F9 /* GetUser.swift */,
+			);
+			path = Endpoints;
+			sourceTree = "<group>";
+		};
+		961FEEB12D218C0D009AC4F9 /* HTTP Calls */ = {
+			isa = PBXGroup;
+			children = (
+				961FEE892D2183A8009AC4F9 /* VaporCall.swift */,
+			);
+			path = "HTTP Calls";
+			sourceTree = "<group>";
+		};
+		961FEEB22D218CE6009AC4F9 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				9677E8382D25663C0069F629 /* StorageKit */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		961FEECA2D21B1D4009AC4F9 /* Environment */ = {
+			isa = PBXGroup;
+			children = (
+				961FEEC62D21AFC2009AC4F9 /* Environment+AuthManager.swift */,
+				961FEEC42D21A75E009AC4F9 /* Environment+TodoService.swift */,
+				961FEECD2D21BC51009AC4F9 /* Environment+User.swift */,
+				9677E82F2D243E7D0069F629 /* Environment Actions */,
+			);
+			path = Environment;
+			sourceTree = "<group>";
+		};
+		9677E8212D2426FF0069F629 /* User */ = {
+			isa = PBXGroup;
+			children = (
+				9677E8222D2427040069F629 /* UserService.swift */,
+				9677E8242D2427210069F629 /* HTTPUserService.swift */,
+			);
+			path = User;
+			sourceTree = "<group>";
+		};
+		9677E82C2D2435D10069F629 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				961FEEBF2D21A3DA009AC4F9 /* AuthorizedHTTPService.swift */,
+				961FEEBB2D2195F0009AC4F9 /* HTTPError.swift */,
+				9677E82A2D2434090069F629 /* AuthProvider.swift */,
+				961FEEBD2D219B62009AC4F9 /* AuthManager.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		9677E82F2D243E7D0069F629 /* Environment Actions */ = {
+			isa = PBXGroup;
+			children = (
+				961FEECB2D21B1DE009AC4F9 /* LoginAction.swift */,
+				961FEECF2D21BDAA009AC4F9 /* LogoutAction.swift */,
+				9677E82D2D243A900069F629 /* RequestAuthorizationAction.swift */,
+			);
+			path = "Environment Actions";
+			sourceTree = "<group>";
+		};
+		9677E8382D25663C0069F629 /* StorageKit */ = {
+			isa = PBXGroup;
+			children = (
+				9677E8302D25603E0069F629 /* Storage.swift */,
+				9677E8322D2560E00069F629 /* StoredKey.swift */,
+				961FEEA82D218A83009AC4F9 /* Keychain.swift */,
+				9677E8342D2563950069F629 /* KeychainStorage.swift */,
+				9677E8362D2564620069F629 /* DefaultsStorage.swift */,
+				9677E8392D2566A90069F629 /* InMemoryStorage.swift */,
+			);
+			path = StorageKit;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -60,11 +319,9 @@
 			);
 			dependencies = (
 			);
-			fileSystemSynchronizedGroups = (
-				961FEE4C2D217DA8009AC4F9 /* TodosApp */,
-			);
 			name = TodosApp;
 			packageProductDependencies = (
+				961FEE662D217F39009AC4F9 /* Melatonin */,
 			);
 			productName = TodosApp;
 			productReference = 961FEE4A2D217DA8009AC4F9 /* TodosApp.app */;
@@ -94,6 +351,9 @@
 			);
 			mainGroup = 961FEE412D217DA8009AC4F9;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				961FEE652D217F39009AC4F9 /* XCRemoteSwiftPackageReference "Melatonin" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 961FEE4B2D217DA8009AC4F9 /* Products */;
 			projectDirPath = "";
@@ -109,6 +369,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				961FEE932D2183A8009AC4F9 /* Preview Assets.xcassets in Resources */,
+				961FEE942D2183A8009AC4F9 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -119,6 +381,45 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				961FEE952D2183A8009AC4F9 /* Auth.swift in Sources */,
+				961FEECC2D21B1E4009AC4F9 /* LoginAction.swift in Sources */,
+				961FEED42D21C511009AC4F9 /* TodoRow.swift in Sources */,
+				961FEE962D2183A8009AC4F9 /* Todo.swift in Sources */,
+				961FEEC02D21A3DF009AC4F9 /* AuthorizedHTTPService.swift in Sources */,
+				9677E8372D2564680069F629 /* DefaultsStorage.swift in Sources */,
+				961FEEC72D21AFC9009AC4F9 /* Environment+AuthManager.swift in Sources */,
+				9677E82B2D24340C0069F629 /* AuthProvider.swift in Sources */,
+				9677E8312D2560400069F629 /* Storage.swift in Sources */,
+				961FEE972D2183A8009AC4F9 /* User.swift in Sources */,
+				961FEEB82D219050009AC4F9 /* GetUser.swift in Sources */,
+				961FEEA12D218419009AC4F9 /* TodoService.swift in Sources */,
+				961FEEA32D218460009AC4F9 /* PaginatedResponse.swift in Sources */,
+				961FEE982D2183A8009AC4F9 /* AuthService.swift in Sources */,
+				961FEE992D2183A8009AC4F9 /* GetTodos.swift in Sources */,
+				961FEEB42D218F3F009AC4F9 /* Refresh.swift in Sources */,
+				961FEEA72D218A1A009AC4F9 /* HTTPTodoService.swift in Sources */,
+				961FEE9A2D2183A8009AC4F9 /* HTTPAuthService.swift in Sources */,
+				961FEEC92D21B0FF009AC4F9 /* LoginView.swift in Sources */,
+				9677E8332D2560E20069F629 /* StoredKey.swift in Sources */,
+				961FEE9B2D2183A8009AC4F9 /* Login.swift in Sources */,
+				961FEE9C2D2183A8009AC4F9 /* LoginResponse.swift in Sources */,
+				961FEEBE2D219B6A009AC4F9 /* AuthManager.swift in Sources */,
+				961FEEC52D21A76F009AC4F9 /* Environment+TodoService.swift in Sources */,
+				9677E82E2D243A980069F629 /* RequestAuthorizationAction.swift in Sources */,
+				9677E83A2D2566AC0069F629 /* InMemoryStorage.swift in Sources */,
+				961FEE9D2D2183A8009AC4F9 /* VaporCall.swift in Sources */,
+				961FEECE2D21BC57009AC4F9 /* Environment+User.swift in Sources */,
+				961FEE9E2D2183A8009AC4F9 /* ContentView.swift in Sources */,
+				961FEEB62D218FB3009AC4F9 /* CreateUser.swift in Sources */,
+				961FEED22D21C4E5009AC4F9 /* TodosView.swift in Sources */,
+				961FEEBC2D2195F8009AC4F9 /* HTTPError.swift in Sources */,
+				961FEED02D21BDAE009AC4F9 /* LogoutAction.swift in Sources */,
+				9677E8232D2427070069F629 /* UserService.swift in Sources */,
+				961FEED62D21C7F8009AC4F9 /* UserView.swift in Sources */,
+				9677E8252D2427240069F629 /* HTTPUserService.swift in Sources */,
+				961FEE9F2D2183A8009AC4F9 /* TodosApp.swift in Sources */,
+				961FEEA92D218A83009AC4F9 /* Keychain.swift in Sources */,
+				9677E8352D2563990069F629 /* KeychainStorage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -252,6 +553,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TodosApp/Info.plist;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -291,6 +593,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TodosApp/Info.plist;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -339,6 +642,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		961FEE652D217F39009AC4F9 /* XCRemoteSwiftPackageReference "Melatonin" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/the-braveknight/Melatonin";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.3.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		961FEE662D217F39009AC4F9 /* Melatonin */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 961FEE652D217F39009AC4F9 /* XCRemoteSwiftPackageReference "Melatonin" */;
+			productName = Melatonin;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 961FEE422D217DA8009AC4F9 /* Project object */;
 }

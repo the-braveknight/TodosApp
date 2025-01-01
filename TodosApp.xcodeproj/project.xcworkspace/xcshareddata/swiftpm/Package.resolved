@@ -1,0 +1,15 @@
+{
+  "originHash" : "b61061d853676cfa002e7f2529dc86a0596b553debc403c2e26138ae69433e51",
+  "pins" : [
+    {
+      "identity" : "melatonin",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/the-braveknight/Melatonin",
+      "state" : {
+        "revision" : "7e7a427740ef48978f755c14df5bd8d03508eb88",
+        "version" : "0.3.0"
+      }
+    }
+  ],
+  "version" : 3
+}
