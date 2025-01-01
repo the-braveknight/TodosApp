@@ -32,4 +32,7 @@ struct ContentView: View {
 
 #Preview {
     ContentView()
+        .environment(User.example)
+        .modelContainer(for: [User.self, Todo.self], inMemory: true)
+        .environment(\.todoService, MockTodoService())
 }

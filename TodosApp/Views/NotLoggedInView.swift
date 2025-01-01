@@ -22,3 +22,19 @@ struct NotLoggedInView: View {
         }
     }
 }
+
+#Preview {
+    @Previewable @State var isLoginScreenPresented: Bool = false
+    
+    var requestAuthorization: RequestAuthorizationAction {
+        RequestAuthorizationAction {
+            isLoginScreenPresented = true
+        }
+    }
+    
+    NotLoggedInView()
+        .environment(\.requestAuthorization, requestAuthorization)
+        .sheet(isPresented: $isLoginScreenPresented) {
+            LoginView()
+        }
+}

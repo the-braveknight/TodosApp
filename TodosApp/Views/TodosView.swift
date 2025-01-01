@@ -90,3 +90,9 @@ struct TodosView: View {
         }
     }
 }
+
+#Preview {
+    TodosView()
+        .modelContainer(for: Todo.self, inMemory: true)
+        .environment(\.todoService, MockTodoService())
+}

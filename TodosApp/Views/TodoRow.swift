@@ -41,7 +41,7 @@ struct TodoRow: View {
     }
 }
 
-extension Todo {
+private extension Todo {
     static let example = Todo(id: UUID(), title: "Do something.", isComplete: false)
 }
 

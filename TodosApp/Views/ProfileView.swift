@@ -35,3 +35,8 @@ struct ProfileView: View {
         }
     }
 }
+
+#Preview {
+    ProfileView()
+        .environment(User.example)
+}

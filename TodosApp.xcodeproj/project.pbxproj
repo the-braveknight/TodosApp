@@ -17,7 +17,6 @@
 		961FEE992D2183A8009AC4F9 /* GetTodos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 961FEE852D2183A8009AC4F9 /* GetTodos.swift */; };
 		961FEE9A2D2183A8009AC4F9 /* HTTPAuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 961FEE862D2183A8009AC4F9 /* HTTPAuthService.swift */; };
 		961FEE9B2D2183A8009AC4F9 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 961FEE872D2183A8009AC4F9 /* Login.swift */; };
-		961FEE9C2D2183A8009AC4F9 /* LoginResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 961FEE882D2183A8009AC4F9 /* LoginResponse.swift */; };
 		961FEE9D2D2183A8009AC4F9 /* VaporCall.swift in Sources */ = {isa = PBXBuildFile; fileRef = 961FEE892D2183A8009AC4F9 /* VaporCall.swift */; };
 		961FEE9E2D2183A8009AC4F9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 961FEE8D2D2183A8009AC4F9 /* ContentView.swift */; };
 		961FEE9F2D2183A8009AC4F9 /* TodosApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 961FEE912D2183A8009AC4F9 /* TodosApp.swift */; };
@@ -55,6 +54,7 @@
 		9677E8582D25CEF40069F629 /* TodoEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9677E8552D25CEF40069F629 /* TodoEntity.swift */; };
 		9677E8592D25CEF40069F629 /* TodoEntityQuery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9677E8562D25CEF40069F629 /* TodoEntityQuery.swift */; };
 		9677E85A2D25CEF40069F629 /* ToggleTodoIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9677E8572D25CEF40069F629 /* ToggleTodoIntent.swift */; };
+		9677E85C2D25D7690069F629 /* MockTodoService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9677E85B2D25D7650069F629 /* MockTodoService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -66,7 +66,6 @@
 		961FEE852D2183A8009AC4F9 /* GetTodos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetTodos.swift; sourceTree = "<group>"; };
 		961FEE862D2183A8009AC4F9 /* HTTPAuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPAuthService.swift; sourceTree = "<group>"; };
 		961FEE872D2183A8009AC4F9 /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
-		961FEE882D2183A8009AC4F9 /* LoginResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginResponse.swift; sourceTree = "<group>"; };
 		961FEE892D2183A8009AC4F9 /* VaporCall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VaporCall.swift; sourceTree = "<group>"; };
 		961FEE8B2D2183A8009AC4F9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		961FEE8D2D2183A8009AC4F9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -106,6 +105,7 @@
 		9677E8552D25CEF40069F629 /* TodoEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoEntity.swift; sourceTree = "<group>"; };
 		9677E8562D25CEF40069F629 /* TodoEntityQuery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoEntityQuery.swift; sourceTree = "<group>"; };
 		9677E8572D25CEF40069F629 /* ToggleTodoIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToggleTodoIntent.swift; sourceTree = "<group>"; };
+		9677E85B2D25D7650069F629 /* MockTodoService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockTodoService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -204,7 +204,6 @@
 		961FEEAC2D218BBD009AC4F9 /* Responses */ = {
 			isa = PBXGroup;
 			children = (
-				961FEE882D2183A8009AC4F9 /* LoginResponse.swift */,
 				961FEEA22D21845B009AC4F9 /* PaginatedResponse.swift */,
 			);
 			path = Responses;
@@ -234,6 +233,7 @@
 			children = (
 				961FEEA02D218417009AC4F9 /* TodoService.swift */,
 				961FEEA62D218A16009AC4F9 /* HTTPTodoService.swift */,
+				9677E85B2D25D7650069F629 /* MockTodoService.swift */,
 			);
 			path = Todo;
 			sourceTree = "<group>";
@@ -432,7 +432,6 @@
 				9677E8502D25CB040069F629 /* CreateTodo.swift in Sources */,
 				961FEEC92D21B0FF009AC4F9 /* LoginView.swift in Sources */,
 				961FEE9B2D2183A8009AC4F9 /* Login.swift in Sources */,
-				961FEE9C2D2183A8009AC4F9 /* LoginResponse.swift in Sources */,
 				9677E84E2D25CAA90069F629 /* Todo+Create.swift in Sources */,
 				9677E8412D258B7A0069F629 /* NotLoggedInView.swift in Sources */,
 				961FEEBE2D219B6A009AC4F9 /* AuthManager.swift in Sources */,
@@ -444,6 +443,7 @@
 				961FEE9E2D2183A8009AC4F9 /* ContentView.swift in Sources */,
 				961FEEB62D218FB3009AC4F9 /* CreateUser.swift in Sources */,
 				961FEED22D21C4E5009AC4F9 /* TodosView.swift in Sources */,
+				9677E85C2D25D7690069F629 /* MockTodoService.swift in Sources */,
 				961FEEBC2D2195F8009AC4F9 /* HTTPError.swift in Sources */,
 				9677E8452D25B7FE0069F629 /* PatchTodo.swift in Sources */,
 				961FEED02D21BDAE009AC4F9 /* LogoutAction.swift in Sources */,

@@ -59,3 +59,7 @@ struct CreateTodoView: View {
         }
     }
 }
+
+#Preview {
+    CreateTodoView()
+}

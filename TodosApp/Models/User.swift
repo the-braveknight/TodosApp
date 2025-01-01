@@ -41,3 +41,7 @@ class User: Codable {
         try container.encode(firstName, forKey: .firstName)
     }
 }
+
+extension User {
+    static let example = User(id: UUID(), email: "zaid@example.com", firstName: "Zaid", lastName: "Rahhawi")
+}
